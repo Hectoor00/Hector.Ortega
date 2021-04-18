@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1> Completar el siguiente formulario</h1>
+    </header>
+    <section>
+        <form action="enviado.html" method="GET">
+            <fieldset>
+                <legend> Datos personales del alumno</legend>
+
+                <label for="txtnombre1a">Primer nombre:</label>
+                <input type="text" name="txtnombre1a" id="txtnombre1a" placeholder="Primer nombre" required> 
+                
+                <label for="txtnombre2a">Segundo nombre:</label>
+                <input type="text" name="txtnombre2a" id="txtnombre2a" placeholder="Segundo nombre"><br><br>
+                
+                <label for="txtapellido1a">Primer apellido:</label>
+                <input type="text" name="txtapellido1a" id="txtapellido1a" placeholder="Primer apellido" required>
+                
+                <label for="txtapellido2a">Segundo apellido:</label>
+                <input type="text" name="txtapellido2a" id="txtapellido2a" placeholder="Segundo apellido"><br><br>
+                
+                <label for="nacimiento">fecha de nacimeinto:</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+            
+            </fieldset><br>
+            
+            <fieldset>
+                <legend>Datos personales del padre</legend>
+                <label for="txtnombre1p">Primer nombre:</label>
+                <input type="text" name="txtnombre1p" id="txtnombre1p" placeholder="Primer nombre" required> 
+                <label for="txtnombre2p">Segundo nombre:</label>
+                <input type="text" name="txtnombre2p" id="txtnombre2p" placeholder="Segundo nombre"><br><br>
+                <label for="txtapellido1p">Primer apellido:</label>
+                <input type="text" name="txtapellido1p" id="txtapellido1p" placeholder="Primer apellido" required>
+                <label for="txtapellido2p">Segundo apellido:</label>
+                <input type="text" name="txtapellido2p" id="txtapellido2p"a placeholder="Segundo apellido"><br><br>
+                <label for="nacimientop">fecha de nacimeinto:</label>
+                <input type="date" name="nacimientop" id="nacimientop">
+                <label for="telefonoP">Telefono:</label>
+                <input type="tel" name="telefonoP" id="telefonoP" required pattern="[0-9]+" placeholder="22222222">
+            </fieldset><br>
+            <fieldset>
+                <legend> Datos personales de la madre</legend>
+                <label for="txtnombre1m">Primer nombre:</label>
+                <input type="text" name="txtnombre1pm" id="txtnombre1pm" placeholder="Primer nombre" required>
+
+                <label for="txtnombre2m">Segundo nombre:</label>
+                <input type="text" name="txtnombre2m" id="txtnombre2m" placeholder="Segundo nombre"><br><br>
+
+                <label for="txtapellido1m">Primer apellido:</label>
+                <input type="text" name="txtapellido1m" id="txtapellido1m" placeholder="Primer apellido" required>
+
+                <label for="txtapellido2m">Segundo apellido:</label>
+                <input type="text" name="txtapellido2m" id="txtapellido2m"a placeholder="Segundo apellido"><br><br>
+
+                <label for="nacimientom">fecha de nacimeinto:</label>
+                <input type="date" name="nacimientom" id="nacimientom">
+
+                <label for="telefonoM">Telefono:</label>
+                <input type="tel" name="telefonoM" id="telefonoM" required pattern="[0-9]+" placeholder="22222222">
+            </fieldset><br>
+            <fieldset>
+                <legend> Datos extras del Alumno</legend>
+                <label for="checkdeporte">Deportes Favoritos</label><br>
+                <input type="checkbox" name="checkdeporte" id="checkdeporte" checked >Futbol
+                <input type="checkbox" name="checkdeporte" id="checkdeporte">Basquetbol
+                <input type="checkbox" name="checkdeporte" id="checkdeporte">Bolyball <br>
+                <label for="txtdeporte">Otro:</label>
+                <input type="text" name="txtdeporte" id="txtdeporte"><br><br>
+                <label for="nacionalidad">Nacionalidad</label>
+                <select name="nacionalidad" id="nacionalidad" required>
+                    <option value="ESA">El Salvador</option>
+                    <option value="GUATE">Guatemala</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="HON">Honduras</option>
+                    <option value="PAN">Panama</option>
+                </select>
+                <label for="txtnacionalidad">Otro:</label>
+                <input type="text" name="txtnacionalidad" id="txtnacionalidad"><br><br>
+
+                <label for="color"> Color favorito:</label>
+                <input type="color" name="color" id="color"><br><br>
+
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="sexo" value="M">Masculino
+                <input type="radio" name="sexo" id="sexo" value="F">Femenino <br><br>
+
+                <label for="grado">Ultimo grado cursado:</label>
+                <select name="grado" id="grado">
+                    <option value="K">Kinder</option>
+                    <option value="1">Primer Grado</option>
+                    <option value="2">Segundo Grado</option>
+                    <option value="3">Tercer Grado</option>
+                    <option value="4">Cuarto Grado</option>
+                    <option value="5">Quinto Grado</option>
+                    <option value="6">Sexto Grado</option>
+                    <option value="7">Septimo Grado</option>
+                    <option value="8">Octavo Grado</option>
+                    <option value="9">Noveno Grado</option>
+                    <option value="10">Primero De Bachillerato</option>
+                    <option value="11">Segundo De Bachillerato</option>
+                    <option value="12">Tercero De Bachillerato</option>
+                </select>
+            </fieldset><br>
+            <fieldset>
+                <legend>Datos Extras del Padre</legend>
+
+                <label for="correoP">Correo:</label>
+                <input type="email" name="correoP" id="correoP" required placeholder="Escriba su Correo"><br><br>
+
+                <label for="txttrabajoP">Trabajo:</label>
+                <input type="text" name="txttrabajoP" id="txttrabajoP"  placeholder="Escriba su trabajo"><br><br>
+
+                <label for="gradoP">Hasta que grado a cursado:</label>
+                <select name="gradoP" id="gradoP">
+                    <option value="KP">Kinder</option>
+                    <option value="1P">Primer Grado</option>
+                    <option value="2P">Segundo Grado</option>
+                    <option value="3P">Tercer Grado</option>
+                    <option value="4P">Cuarto Grado</option>
+                    <option value="5P">Quinto Grado</option>
+                    <option value="6P">Sexto Grado</option>
+                    <option value="7P">Septimo Grado</option>
+                    <option value="8P">Octavo Grado</option>
+                    <option value="9P">Noveno Grado</option>
+                    <option value="10P">Primero De Bachillerato</option>
+                    <option value="11P">Segundo De Bachillerato</option>
+                    <option value="12P">Tercero De Bachillerato</option>
+                </select>
+            </fieldset><br>
+            <fieldset>
+                <legend> Datos Extras de la Madre</legend>
+
+                <label for="correoM">Correo:</label>
+                <input type="email" name="correoM" id="correoM"  placeholder="Escriba su Correo"><br><br>
+
+                <label for="txttrabajoM">Trabajo:</label>
+                <input type="text" name="txttrabajoM" id="txttrabajoM" required placeholder="Escriba su trabajo"><br><br>
+
+                <label for="gradoM">Hasta que grado a cursado:</label>
+                <select name="gradoM" id="gradoM">
+                    <option value="KM">Kinder</option>
+                    <option value="1M">Primer Grado</option>
+                    <option value="2M">Segundo Grado</option>
+                    <option value="3M">Tercer Grado</option>
+                    <option value="4M">Cuarto Grado</option>
+                    <option value="5M">Quinto Grado</option>
+                    <option value="6M">Sexto Grado</option>
+                    <option value="7M">Septimo Grado</option>
+                    <option value="8M">Octavo Grado</option>
+                    <option value="9M">Noveno Grado</option>
+                    <option value="10M">Primero De Bachillerato</option>
+                    <option value="11M">Segundo De Bachillerato</option>
+                    <option value="12M">Tercero De Bachillerato</option>
+                </select>
+                </fieldset><br><br>
+
+                <section>
+
+                    <button type="submit" href="enviado.html" id="button">enviar</button><br><br>
+                    <button type="reset" id="button">reset</button><br><br>
+                    <a href="m_e2.html" id="button">Menu</a>
+                </section>
+            </form>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+</html>

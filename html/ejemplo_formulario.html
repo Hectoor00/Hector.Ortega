@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <a name="menu"></a>
+    <header>
+        <h1>Ejemplo de Formulario de Registro</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="m_e3.html">
+                    Ir al inicio
+                </a>
+            </li>
+            <li>
+                <a href="formulario1.1.html">
+                    Ir al formulario
+                </a>
+            </li>
+            <li>
+                <a href="ejemplo_formulario.html" id="menu">Ejemplo</a>
+            </li>
+        </ul>
+    </nav><br><hr><br>
+    <div>
+        <form action="formulario1.1.html" method="get">
+            <fieldset>
+                <legend>Datos</legend>
+                <label for="txtnombre">nombre:</label>
+                <input type="text" name="txtnombre" id="txtnombre" placeholder="solo letras" minlength="2" maxlength="25" pattern="[A-ZáéíóúÁÉÍÓÚa-z]+" title="Solo letras. tamaño minimo: 2. tamaño maximo: 25" required>
+
+                <label for="txtapellido">Apellido:</label>
+                <input type="text" name="txtapellido" id="txtapellido" placeholder="solo letras" minlength="2" maxlength="25" pattern="[A-ZáéíóúÁÉÍÓÚa-z]+" title="Solo letras. tamaño minimo: 2. tamaño maximo: 25" required>
+                <br><br>
+                <label for="txtemail">Correo Electronico:</label>
+                <input type="email" name="txtemail" id="txtemail" placeholder="ej.correo@server.com" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" title="debe de escribir su correo completo. ej. correo@server.com">
+                <br><br>
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="2222-2222" pattern="^([0-9]+){4}-([0-9]+){4})" maxlength="9" title="debe cololar su numero telefonico separado por un guion despues de 4 numeros. ej. 2222-2222">
+                <br><br>
+                <label for="txtdireccion">Dirección:</label>
+                <textarea name="txtdireccion" id="txtdireccion" cols="70" rows="3"></textarea>
+                <br><br>
+                <label for="sexo">Sexo</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="sexo" id="sexo" value="m" checked>Masculino
+                    </li>
+                    <li>
+                        <input type="radio" name="sexo" id="sexo" value="f">Femenino
+                    </li>
+                </ul>
+                <br>
+                <label for="deportes">Deportes que Practica</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="deportes" id="deportes" value="futbol">Futbol
+                    </li>
+                    <li>
+                        <input type="checkbox" name="deportes" id="deportes" value="BKB">Basquetbol
+                    </li>
+                    <li>
+                        <input type="checkbox" name="deportes" id="deportes" value="volyball">Volyball
+                    </li>
+                    <li>
+                        <input type="checkbox" name="deportes" id="deportes" value="golf">Golf
+                    </li>
+                    <li>
+                        <input type="text" name="deportes" id="deportes" value="OtroDeporte" placeholder="Escriba otro deporte" maxlength="25" pattern="[A-Za-z áéíóúÁÉÍÓÚ]+">
+                    </li>
+                </ul>
+                <br>
+                <label for="nacimento">Fecha de Nacimineto</label>
+                <input type="date" name="nacimento" id="nacimento" required max="2021-03-14">
+                <br><br>
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" required minlength="4"
+                placeholder="escriba su usuario" maxlength="25" pattern="[A-Za-z0-9.-_]+" title="debe colocar un maximo de 25 caracteres ya sean numeros o letras mayusculas o minusculas">
+                <br><br>
+                <label for="clave1">Clave</label>
+                <input type="password" name="clave1" id="clave1" placeholder="escriba la clave" maxlength="8" minlength="6" required pattern="[A-Za-z0-9ÁÉÍÓÚáéíóú]+" title="clave de 6 a 8 caracteres en letra y numeros, no acepta caracteres especiales y no deben de haber espacios">
+                <br><br>
+                <label for="clave2">Confirmar Clave</label>
+                <input type="password" name="clave2" id="clave2" maxlength="8" placeholder="repita la clave" minlength="6" required pattern="[A-Za-z0-9ÁÉÍÓÚáéíóú]+" title="clave de 6 a 8 caracteres en letra y numeros, no acepta caracteres especiales y no deben de haber espacios">
+                <br><br>
+            </fieldset><br><br>
+            <div>
+                <button type="submit" id="button">
+                    enviar
+                </button>
+                <button type="reset" id="button">reiniciar formulario</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div id="regresar">
+        <button type="button">
+            <a href="#menu">subir</a>
+        </button>
+    </div>
+    <br><hr><br>
+    <footer>
+        <h3>
+            Realizado por:<br>Ingeniero. Oscar Sánchez
+        </h3>
+        <h5>
+            Universidad Luterana Salvadoreña
+        </h5>
+        <img src="../img/uls.jpg" alt="logo Universidad">
+    </footer>
+    <script src="../js/script.js"></script>   
+</body>
+</html>
